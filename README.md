@@ -12,21 +12,23 @@ Link: http://www.wch.cn/downloads/CH34XSER_MAC_ZIP.html
 ## ***\*Chip Model Support\****
 
 - CH340/CH341/CH343/CH9101/CH9102/CH9143 (USB to Single Serial Port)
-- CH342/CH344/ CH344/CH347/CH9103 (USB to Multi Serial Ports)
+- CH342/CH344/CH344/CH347/CH9103/CH9104 (USB to Multi Serial Ports)
 
 ## ***\*Installation\****
 
 1. Download the driver from the website and unzip the file to a local installation directory.
 
-2. Click on the driver file and continue to proceed step by step.
+2. When using OS X 11.0 and above and the OS does not support Rosetta, the dmg format driver should be installed (follow step4), otherwise the pkg format driver should be installed by default (follow step3).
 
-![img](README.assets/wpsFC5A.tmp.jpg) 
+3. When installing the pkg format driver, click on the driver file and continue to proceed step by step.
+
+![img](README.assets/1.png) 
 
 
 
 ![img](README.assets/wpsFC5B.tmp.jpg) 
 
-When using OS X 11.0 and above, you need to perform the following additional operation:
+When installing the pkg format driver on OS X 11.0 and above, you need to perform the following additional operation:
 
 Open “LaunchPad” and find “CH34xVCPDriver” Application, open the App and click the “Install” button.
 
@@ -36,11 +38,15 @@ When using OS X 10.9 to OS X 10.15, you need to click “Restart” to restart y
 
 ![img](README.assets/wpsFC5D.tmp.jpg) 
 
-3. When plug the USB-to-SERIAL device into the USB port, you can open “System Report”->Hardware->USB, the right side is “USB Device Tree” and you will find a device whose “Vendor ID” is **[0x1a86]** if USB device is working properly.
+4. When installing the dmg format driver, you need to click the dmg file and drag “CH34xVCPDriver” into Application folder in OS, then open “LaunchPad” and find “CH34xVCPDriver” Application, open the App and click the “Install” button.
+
+   ![wpsFC5C.tmp](README.assets\wpsFC5C.tmp.png)
+
+5. When plug the USB-to-SERIAL device into the USB port, you can open “System Report”->Hardware->USB, the right side is “USB Device Tree” and you will find a device whose “Vendor ID” is **[0x1a86]** if USB device is working properly.
 
 ![img](README.assets/wpsFC5E.tmp.jpg) 
 
-4. Open Terminal program under Applications-Utilities folder and type the command “ls /dev/tty*”.
+6. Open Terminal program under Applications-Utilities folder and type the command “ls /dev/tty*”.
 
 ![img](README.assets/wpsFC5F.tmp.jpg) 
 
@@ -60,7 +66,7 @@ Please enter “System Preferences”->“Security & Privacy”->“General” p
 
 ## ***\*Uninstall Driver\****
 
-- Mac OS X 10.9~10.15 
+- OS X 10.9~10.11 
 
 Open "Terminal" program under Applications-Utilities folder and type the following commands:
 
@@ -68,7 +74,19 @@ Open "Terminal" program under Applications-Utilities folder and type the followi
 
 ***\*sudo rm –rf /var/db/receipts/\*CH34xVCPDriver\*.\*\**** 
 
-- Mac OS X 11.0 and above
+- OS X 10.12~10.15 
+
+Open “Terminal” program under Applications-Utilities folder and type the following commands:
+
+***\*sudo rm -rf /Library/Extensions/CH34xVCPDriver.kext\****
+
+***\*sudo rm -rf /Library/Extensions/CH34xVCPControlDriver.kext\****
+
+***\*sudo rm –rf /var/db/receipts/\*CH34xVCPDriver\*.\*\**** 
+
+***\*sudo rm –rf /var/db/receipts/\*CH34xVCPControlDriver\*.\*\**** 
+
+- OS X 11.0 and above
 
 1. Remove the Application to “Trash” to uninstall.
 
