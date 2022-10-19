@@ -40,7 +40,7 @@ When using OS X 10.9 to OS X 10.15, you need to click “Restart” to restart y
 
 4. When installing the dmg format driver, you need to click the dmg file and drag “CH34xVCPDriver” into Application folder in OS, then open “LaunchPad” and find “CH34xVCPDriver” Application, open the App and click the “Install” button.
 
-   ![wpsFC5C.tmp](README.assets\wpsFC5C.tmp.png)
+   ![img](README.assets/wpsFC5C.tmp.png) 
 
 5. When plug the USB-to-SERIAL device into the USB port, you can open “System Report”->Hardware->USB, the right side is “USB Device Tree” and you will find a device whose “Vendor ID” is **[0x1a86]** if USB device is working properly.
 
