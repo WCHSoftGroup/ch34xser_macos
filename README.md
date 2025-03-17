@@ -11,8 +11,8 @@ Link: http://www.wch.cn/downloads/CH34XSER_MAC_ZIP.html
 
 ## ***\*Chip Model Support\****
 
-- CH340/CH341/CH343/CH9101/CH9102/CH9143 (USB to Single Serial Port)
-- CH342/CH344/CH344/CH347/CH9103/CH9104 (USB to Multi Serial Ports)
+- CH340/CH341/CH343/CH346/CH9101/CH9102/CH9143/CH339 (USB to Single Serial Port)
+- CH342/CH344/CH347/CH9103/CH9104/CH9111/CH9114 (USB to Multi Serial Ports)
 
 ## ***\*Installation\****
 
@@ -22,33 +22,33 @@ Link: http://www.wch.cn/downloads/CH34XSER_MAC_ZIP.html
 
 3. When installing the pkg format driver, click on the driver file and continue to proceed step by step.
 
-![img](README.assets/1.png) 
+![img](./README.assets/1.png) 
 
 
 
-![img](README.assets/wpsFC5B.tmp.jpg) 
+![img](./README.assets/2.png) 
 
-When installing the pkg format driver on OS X 11.0 and above, you need to perform the following additional operation:
+When using OS X 11.0 and above, you need to perform the following additional operation:
 
 Open “LaunchPad” and find “CH34xVCPDriver” Application, open the App and click the “Install” button.
 
-![img](README.assets/wpsFC5C.tmp.png) 
+![img](./README.assets/3.png) 
 
 When using OS X 10.9 to OS X 10.15, you need to click “Restart” to restart your computer, then perform the following steps after restarting.
 
-![img](README.assets/wpsFC5D.tmp.jpg) 
+![img](./README.assets/4.png) 
 
 4. When installing the dmg format driver, you need to click the dmg file and drag “CH34xVCPDriver” into Application folder in OS, then open “LaunchPad” and find “CH34xVCPDriver” Application, open the App and click the “Install” button.
 
-   ![img](README.assets/wpsFC5C.tmp.png) 
+![img](./README.assets/3.png) 
 
 5. When plug the USB-to-SERIAL device into the USB port, you can open “System Report”->Hardware->USB, the right side is “USB Device Tree” and you will find a device whose “Vendor ID” is **[0x1a86]** if USB device is working properly.
 
-![img](README.assets/wpsFC5E.tmp.jpg) 
+![img](./README.assets/5.png) 
 
 6. Open Terminal program under Applications-Utilities folder and type the command “ls /dev/tty*”.
 
-![img](README.assets/wpsFC5F.tmp.jpg) 
+![img](./README.assets/6.png) 
 
 You should see the “tty.wchusbserialx” where “x” is the assigned device number similar to Windows COM port assignment. 
 
@@ -62,7 +62,15 @@ Link: https://developer.apple.com/library/content/technotes/tn2459/_index.html
 
 Please enter “System Preferences”->“Security & Privacy”->“General” page, below the title “Allow apps downloaded from:” choose the choice 2->”Mac App Store and identified developers” so that driver will work normally.
 
-![img](README.assets/wpsFC70.tmp.png) 
+![img](./README.assets/7.png) 
+
+## ***\*OS X 11.0 and above:\****
+
+With the upgrade of macOS versions, the authorization method has changed. Please check the corresponding authorization method based on your system version.
+
+![img](./README.assets/8.png) 
+
+![img](./README.assets/9.png) 
 
 ## ***\*Uninstall Driver\****
 
