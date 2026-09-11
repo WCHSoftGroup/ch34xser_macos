@@ -2,7 +2,7 @@
 ## ***\*Introduction\****
 
 This installation guide document shows the procedure of installing the macOS driver for the WCH USB-to-SERIAL devices. The driver can be downloaded from the website:
-Link: http://www.wch.cn/downloads/CH34XSER_MAC_ZIP.html
+Link: http://www.wch.cn/downloads/CH341SER_MAC_ZIP.html
 
 ## ***\*System Requirement\****
 
@@ -11,8 +11,8 @@ Link: http://www.wch.cn/downloads/CH34XSER_MAC_ZIP.html
 
 ## ***\*Chip Model Support\****
 
-- CH340/CH341/CH343/CH346/CH9101/CH9102/CH9143/CH339 (USB to Single Serial Port)
-- CH342/CH344/CH347/CH9103/CH9104/CH9111/CH9114 (USB to Multi Serial Ports)
+- CH340/CH341/CH343/CH346/CH339/CH9101/CH9102/CH9111/CH9143/CH9149/CH9433 (USB to Single Serial Port)
+- CH342/CH344/CH346/CH347/CH9103/CH9104/CH9105/CH9114 (USB to Multi Serial Ports)
 
 ## ***\*Installation\****
 
@@ -52,15 +52,13 @@ When using OS X 10.9 to OS X 10.15, you need to click “Restart” to restart y
 
 You should see the “tty.wchusbserialx” where “x” is the assigned device number similar to Windows COM port assignment. 
 
- 
-
 ## ***\*Note:\****
 
-Mac OS High Sierra 10.13 introduces a new feature that requires user approval before loading new third-party kernel extensions. Go to System Preferences - Security & Privacy and click Allow. 
+Mac OS High Sierra 10.13 introduces a new feature that requires the user's approval before loading new third-party kernel extensions. Go to System Preferences - Security & Privacy and click Allow. 
 
 Link: https://developer.apple.com/library/content/technotes/tn2459/_index.html
 
-Please enter “System Preferences”->“Security & Privacy”->“General” page, below the title “Allow apps downloaded from:” choose the choice 2->”Mac App Store and identified developers” so that driver will work normally.
+Please forward to “System Preferences”->“Security & Privacy”->“General” page, below the title “Allow apps downloaded from:” choose the choice 2->”Mac App Store and identified developers” so that driver will work normally.
 
 ![img](README.assets/7.png) 
 
@@ -97,7 +95,4 @@ Open “Terminal” program under Applications-Utilities folder and type the fol
 - OS X 11.0 and above
 
 1. Remove the Application to “Trash” to uninstall.
-
 2. Restart the computer again before reinstalling the driver.
-
- 
